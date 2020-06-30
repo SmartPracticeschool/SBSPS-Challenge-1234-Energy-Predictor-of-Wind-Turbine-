@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hello World With page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='main.css')}}">
+    <script src='main.js'></script>
+</head>
+<body ="1.jpg">
+<form action="http://127.0.0.1:5000/pre"method="post">
+    
+
+
+
+            <center>
+                <h1>Wind Power Predictor</h1>
+            
+            <p>Enter Longitude of wind farm</p>
+            <input type = 'number' name = 'log' placeholder="1.00" step="0.01" min="0" max="360" >
+            <p>Enter Latitude of wind farm</p>
+            <input type = 'number' name = 'lat' placeholder="1.00" step="0.01" min="0" max="360" ><br>
+            <br>
+            <button type="submit" value="pre" formtarget="_blank" autofocus>Predict</button>
+
+            </center>
+      
+    
+ 
+
+</form>
+
+<br>
+<h1>
+
+<center>Here Top 10 predictions for Longitude {{log}} and latitude {{lat}} Upcoming Hours</center>
+</h1>
+<br>
+<center>
+<table>
+    <tr>
+        <th>Time</th><th>Values(KW)</th>
+    </tr>
+    {% for item in list%}
+    <tr>
+        <td>{{item[0]}}</td>
+        <td>{{item[1]}}</td>
+    </tr>
+    
+    {% endfor %}
+</table>
+</center>
+
+<center><h6>Project by Jeel Gondaliya</h6></center>
+</body>
+</html>
