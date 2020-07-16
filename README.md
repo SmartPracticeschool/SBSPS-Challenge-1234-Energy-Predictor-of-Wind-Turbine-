@@ -7,4 +7,6 @@
 
 Project is Running On IBM Cloud Project URL - http://windpowerpredictor-chatty-kangaroo-nw.mybluemix.net/
 
+Demo of Project UI Video link https://drive.google.com/file/d/1euhtgAo6AbTiTRvRHc2ZwXJEFew8715z/view?usp=sharing
+
 All The Project Done By me.
