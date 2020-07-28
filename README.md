@@ -1,4 +1,4 @@
-# SBSPS-Challenge-1234-Energy-Predictor-of-Wind-Turbine-
+#Energy-Predictor-of-Wind-Turbine-
 #Files Details
 * Login.html - Home Page
 * Main.css - css Files of Login.html
